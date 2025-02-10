@@ -7,7 +7,7 @@ console.log(galleryItems);
 const container = document.querySelector(".gallery");
 const markup = galleryItems.map(item => `
    <li class="gallery__item js-target">
-     <a class="gallery__link" href="${item.original}">
+     <a class="gallery__link js-target" href="${item.original}">
        <img class="gallery__image js-target" src="${item.preview}" 
         data-source="${item.original}"
         alt="${item.description}">
